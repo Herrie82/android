@@ -22,6 +22,10 @@
   <remote  name="them"
            fetch="https://github.com/TheMuppets"
            revision="refs/heads/lineage-15.1" />
+  
+  <remote  name="them2"
+           fetch="https://gitlab.com/the-muppets"
+           revision="refs/heads/lineage-15.1" />
 
   <remote  name="sailfishos"
            fetch="https://github.com/sailfishos" />
@@ -39,7 +43,7 @@
   <project path="hybris/mer-kernel-check" name="mer-kernel-check" remote="mer-hybris" revision="master" />
   <project path="external/droidmedia" name="droidmedia" remote="sailfishos" revision="master" />
   <project path="external/audioflingerglue" name="audioflingerglue" remote="mer-hybris" revision="master" />
-  <project path="external/busybox" name="android_external_busybox_prebuilt" remote="mer-hybris" revision="master" />
+  <project path="external/busybox" name="herrie82/android_external_busybox" revision="halium-8.1" />
   <project path="external/selinux_stubs" name="android_external_selinux_stubs" remote="mer-hybris" revision="master" />
 
   <!-- Halium repos -->
@@ -48,7 +52,7 @@
 
   <!-- AOSP Projects -->
 
-  <project path="build/make" name="android_build" groups="pdk" remote="halium" >
+  <project path="build/make" name="android_build" groups="pdk" remote="halium" revision="halium-8.1-vendor">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -63,7 +67,9 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <!--
   <project path="art" name="android_art" groups="pdk" remote="halium" />
+  -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="mer-hybris" revision="hybris-15.1" />
   <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
 <!--
@@ -698,8 +704,8 @@
   <project path="system/bt" name="LineageOS/android_system_bt" groups="pdk" />
 <!--
   <project path="system/ca-certificates" name="platform/system/ca-certificates" groups="pdk" remote="aosp" />
-  <project path="system/chre" name="platform/system/chre" groups="pdk" remote="aosp" />
 -->
+  <project path="system/chre" name="platform/system/chre" groups="pdk" remote="aosp" />
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk" remote="aosp" />
 <!--
   <project path="system/connectivity/wifilogd" name="platform/system/connectivity/wifilogd" groups="pdk" remote="aosp" />
@@ -724,17 +730,15 @@
   <project path="system/nvram" name="platform/system/nvram" groups="pdk" remote="aosp" />
 -->
   <project path="system/security" name="LineageOS/android_system_security" groups="pdk" />
-  <project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
-<!--
-  <project path="system/timezone" name="LineageOS/android_system_timezone" groups="pdk" />
--->
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="halium" />
+  <project path="system/timezone" name="android_system_timezone" groups="pdk" remote="halium" />
   <project path="system/tools/aidl" name="LineageOS/android_system_tools_aidl" groups="pdk" />
   <project path="system/tools/hidl" name="android_system_tools_hidl" groups="pdk" remote="halium" />
 <!--
   <project path="system/tpm" name="platform/system/tpm" remote="aosp" />
   <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" />
 -->
-  <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" groups="pdk" remote="halium" />
 <!--
   <project path="test/framework" name="platform/test/framework" groups="vts,pdk-fs" remote="aosp" />
   <project path="test/sts" name="platform/test/sts" groups="sts,pdk" remote="aosp" />

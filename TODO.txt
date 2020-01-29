@@ -39,3 +39,6 @@ https://github.com/mer-hybris/android_system_core/commit/6725f53486915799a4eabfa
 https://github.com/mer-hybris/android_system_core/commit/f191037a4e669ebb7197e84e2517c8278ab65814
 https://github.com/mer-hybris/android_system_core/commit/3d572edd109b4d661afd3147f90e46a1aaacee7d
 https://github.com/mer-hybris/android_system_core/commit/dff7abc1e37cc5a85568e68a6a6276ebb0b2373e
+
+### Checking:
+https://github.com/mer-hybris/hybris-patches/blob/4a3ba9a5028258570f27d15423443e95573237bd/system/core/0017-hybris-Disable-ueventd-service.patch
