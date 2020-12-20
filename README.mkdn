@@ -9,7 +9,7 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init -u git://github.com/mer-hybris/android.git -b hybris-16.0
+repo init -u git://github.com/Halium/android.git -b halium-9.0
 ```
 Then to sync up:
 ```

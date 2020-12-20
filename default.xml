@@ -28,6 +28,7 @@
   <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
   <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
   <project path="external/busybox" name="mer-hybris/android_external_busybox_prebuilt" revision="master" />
+  <project path="external/gpg" name="ubports/android_external_gpg" revision="halium-9.0"  />
   <project path="external/selinux_stubs" name="mer-hybris/android_external_selinux_stubs" revision="master" />
   <project path="halium/biometryd" name="ubports/biometryd" revision="xenial_-_edge_-_android8" />
   <project path="halium/fake_crypt" name="Halium/fake_crypt" revision="master" />
@@ -35,6 +36,7 @@
   <project path="halium/halium-boot" name="Halium/halium-boot" revision="halium-9.0" />
   <project path="halium/libhybris" name="Halium/libhybris" revision="halium-9.0" />
   <project path="halium/platform-api" name="ubports/platform-api" revision="xenial_-_edge_-_android8"  />
+  <project path="halium/stub_netd" name="Halium/stub_netd" revision="halium-9.0" />
 
   <!-- AOSP Projects -->
 
@@ -55,7 +57,7 @@
   </project>
   <project path="art" name="LineageOS/android_art" groups="pdk" />
   <project path="bionic" name="LineageOS/android_bionic" groups="pdk" />
-  <project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
+  <project path="bootable/recovery" name="ubports/halium_bootable_recovery" groups="pdk" revision="halium-9.0" />
 <!--
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" />
 -->
